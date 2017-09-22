@@ -1,6 +1,6 @@
 ## How to remove RSA private key passphrase
 
-1. Backup ssh keys and configuration files
+#### Backup ssh keys and configuration files
 
 *** This is very important ***
 
@@ -16,7 +16,7 @@ If you don't have 7z installed:
 brew install p7zip
 ```
  
-2. Remove the password phrase
+#### Remove the password phrase
 
 It will require the password.
 
@@ -25,7 +25,7 @@ openssl rsa -in ~/.ssh/id_rsa -out ~/.ssh/id_rsa_new
 chmod 400 ~/.ssh/id_rsa_new
 ```
 
-3. Test the new key
+#### Test the new key
 
 It shouldn't require the password.
 
@@ -35,7 +35,7 @@ ssh -i ~/.ssh/id_rsa_new <some_host>
 
 Successfully login without password means this new private key is useable.
 
-4. Remove it with the old private key
+#### Remove it with the old private key
 
 ```bash
 cp ~/.ssh/id_rsa ~/.ssh/id_rsa.backup
