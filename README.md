@@ -2,7 +2,7 @@
 
 1. Backup ssh keys and configuration files
 
-** this is very important **
+*** This is very important ***
 
 ```bash
 cd ~/.ssh
