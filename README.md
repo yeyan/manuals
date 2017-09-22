@@ -34,4 +34,4 @@ rm ~/.ssh/id_rsa
 cp ~/.ssh/id_rsa_new ~/.ssh/id_rsa
 ```
 
-After this step we should good to go with the rsa private passphrase free.
+Enjoy your passphrase free private.
