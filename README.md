@@ -2,7 +2,7 @@
 
 #### Backup ssh keys and configuration files
 
-*** This is very important ***
+***This is very important***
 
 ```bash
 cp -r ~/.ssh ~/.ssh_backup
